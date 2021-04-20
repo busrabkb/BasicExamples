@@ -7,17 +7,23 @@ public class Ref {
     static String d="ss";
     public static void main(String[] args) {
 
-        b=a;
-        a=4;
-
-        System.out.printf("b:"+b);
-        System.out.printf("a:"+a);
 
 
-        d=c;
-        c="ll";
+    Deneme d= new Deneme(4);
+    Deneme d2= new Deneme(5);
+    // d ve d2 nin adresleri memory de aynı yeri gösterir
+    d2=d;
+    //d nin değeri değişince d2 de aynı adresi gösterdiği için değeri değişir.
+d.s=44;
+        System.out.println(d.s);
+        System.out.println(d2.s);
+    }
+}
+class Deneme
+{
+    int s;
 
-        System.out.printf("b:"+d);
-        System.out.printf("a:"+c);
+    public Deneme(int s) {
+        this.s = s;
     }
 }
