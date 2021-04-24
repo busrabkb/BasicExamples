@@ -9,7 +9,7 @@ public class FinalObject {
         t.p = 30;
         System.out.println(t.p);
         TestFinal t2 = new TestFinal();
-        //
+        //aşağıdaki kod hata verir çünkü t nesnesinin referansi final old için yeni referans ataması yapılamaz
        // t = t2;
 
     }

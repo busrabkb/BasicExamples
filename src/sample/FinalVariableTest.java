@@ -1,10 +1,11 @@
 package sample;
 
-public class FinalVarTest {
+public class FinalVariableTest {
  static final int[] arr2 = {1, 2, 3};
 
     public static void main(String[] args)
     {  final int s;
+    //local fieldlar final olsa bile sonradan atanabilir. Sadece bir değer atandıktan sonra tekrar değer atanamaz.
         s=5;
         int arr[] = {1, 2, 3};
 
@@ -18,22 +19,3 @@ public class FinalVarTest {
 
 }  }
 
-
-
-
-class Test
-{
-   // final void m1()
-  //  {
-    //    System.out.println("This is a final method.");
-    //}
-}
-
-class Test2 extends Test
-{
-    void m1()
-    {
-        // COMPILE-ERROR! Can't override.
-        System.out.println("Illegal!");
-    }
-}

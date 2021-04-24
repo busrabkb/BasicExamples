@@ -1,6 +1,6 @@
 package sample;
 
-public class Ref {
+public class ReferenceEx {
    static int a=12;
    static int b;
     static String c="asdf";
