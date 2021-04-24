@@ -20,4 +20,8 @@ public class Outter {
 
         }
     }
+
+    public static void main(String[] args) {
+
+    }
 }
