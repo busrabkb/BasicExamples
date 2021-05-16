@@ -1,13 +1,7 @@
 package sample;
 
 public class ReferenceEx {
-   static int a=12;
-   static int b;
-    static String c="asdf";
-    static String d="ss";
     public static void main(String[] args) {
-
-
 
     Deneme d= new Deneme(4);
     Deneme d2= new Deneme(5);
